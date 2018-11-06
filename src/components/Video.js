@@ -5,6 +5,8 @@ import YouTube from 'react-youtube';
 import '../css/Header.css';
 import { Grid } from '@material-ui/core';
 
+
+
 class Video extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +20,7 @@ class Video extends Component {
 
   componentDidMount() {
     const { findCountryName } = this.state;
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyC_kX9In6aA3pSlkHV7kkT10iuSx86EiGs&maxResults=1&q=travel${findCountryName}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=${process.env.REACT_APP_YoutubeToken}&maxResults=1&q=travel${findCountryName}`;
     fetch(url)
       .then(res => res.json())
       .then(

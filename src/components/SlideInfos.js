@@ -133,7 +133,7 @@ class SlideInfos extends React.Component {
                   <div>
                     <h3>
                       <div className={classes.slide3}>
-                        {/* <Video countryName={countryName} /> */}
+                        <Video countryName={countryName} />
                       </div>
                     </h3>
                   </div>
