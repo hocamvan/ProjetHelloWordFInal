@@ -36,7 +36,7 @@ class GalleryPhoto extends Component {
   componentDidMount() {
     const { findCountryPhoto } = this.state;
     //const api = `https://pixabay.com/api/?key=${process.env.REACT_APP_PixabayToken}&page=1&per_page=9&image_type=photo&pretty=true&category=travel&q=tourist+`;
-    const api = `https://www.googleapis.com/customsearch/v1?key=${process.env.REACT_APP_GoogleImageToken}&searchType=image&imgType:photo&imgSize:large&num=9&q=travel%20tourist%20`;
+    const api = `https://www.googleapis.com/customsearch/v1?key=${process.env.REACT_APP_GoogleImageToken}&searchType=image&imgType:photo&imgSize:large&num=9&q=travel%20`;
     const url = api + findCountryPhoto;
     fetch(url)
       .then(res => res.json())
