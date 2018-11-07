@@ -19,7 +19,7 @@ const styles = theme => ({
   },
   logo: {
     maxWidth: '65vw',
-    height: 'max-content',
+    height: '5vh',
     [theme.breakpoints.up('sm')]: {
     },
   },
